@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import myContext from '../store/myContext';
 import fetchProduts from '../service/service';
@@ -29,11 +28,13 @@ function Provider({ children }) {
     }
   },[store])
 
-  useEffect( (store) => {
+  useEffect( () => {
     if (store){
-      const filtredByUF = store.filter( (product) => product.store.location.state === filterByUF );
-      if( filtredByUF.length > 0 ) { setStore(filtredByUF)}
+      const filtredByUF = store
+        .filter( (product) => product.store.location.state === filterByUF );
+      if( filtredByUF.length > 0 ) setStore(filtredByUF);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[filterByUF]);
 
   const contextValue = {
