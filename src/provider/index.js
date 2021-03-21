@@ -29,11 +29,9 @@ function Provider({ children }) {
     }
   },[store])
 
-  useEffect( () => {
+  useEffect( (store) => {
     if (store){
       const filtredByUF = store.filter( (product) => product.store.location.state === filterByUF );
-      console.log(store)
-      console.log(filtredByUF)
       if( filtredByUF.length > 0 ) { setStore(filtredByUF)}
     }
   },[filterByUF]);
