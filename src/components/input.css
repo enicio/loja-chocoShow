@@ -1,0 +1,19 @@
+.input {
+  height: 30px;
+  width: 260px;
+  border-radius: 20px;
+  border-style: none;
+  padding: 3px 15px;
+}
+
+input[type=text] {
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 50%;
+}
+
+input[type=text]:focus {
+  outline-width: 0;
+}

@@ -1,0 +1,45 @@
+.general {
+  display: grid;
+  margin-top: 180px;
+  margin-left: 175px;
+  margin-right: 5vw;
+  justify-items: center;
+  grid-gap: 50px;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+}
+
+.cards {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: rgb(241, 241, 241);
+  width: 200px;
+  height: 230px;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.cards:hover {
+  background-color:rgb(250, 174, 86);
+}
+
+h2, h4 {
+  color: rgb(68, 61, 75);
+  font-size: small;
+}
+
+img {
+  border-radius: 15px;
+  width: 80px;
+  height: 80px;
+}
+
+.searchResult {
+  margin-left: 175px;
+  color: rgb(140, 138, 143);
+  margin-top: 150px;
+  margin-bottom: -150px;
+  font-size: x-large;
+}
