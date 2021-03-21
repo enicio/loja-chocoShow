@@ -20,9 +20,9 @@ function Card() {
         <div >
           <p>
             <b>A partir de:</b>
-            <span class="value">R$ {product.price}</span>
+            <span className="value">R$ {product.price}</span>
           </p>
-         <a class="purchase-btn" href="/">VER PRODUTO</a>
+         <a className="purchase-btn" href="/">VER PRODUTO</a>
         </div>
       </section>
      )}

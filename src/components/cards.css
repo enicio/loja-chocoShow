@@ -114,7 +114,7 @@ img {
 @media (max-width: 700px) {
 .general {
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 10vw;
 }
 
 }

@@ -29,6 +29,7 @@
   .header{
   flex-direction: column;
   height: 125px;
+  min-width: 300px;
   }
 
 }

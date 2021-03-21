@@ -44,10 +44,12 @@
 
 @media (max-width: 700px) {
   .sidenav{
-    height: 15vh;
+    height: 20vh;
     width: 100vw;
     position: relative;
-    margin-right: 50px;
+    width: 100%;
+    min-width: 300px;
+    margin: 110px 0 0 0 ;
   }
 
   .sidenav ul {
