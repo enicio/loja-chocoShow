@@ -13,8 +13,8 @@ function App() {
       <Header/>
       <Input />
     </header>
-      <Card />
       <FilterSection />
+      <Card />
     <Footer />
     </>
   );

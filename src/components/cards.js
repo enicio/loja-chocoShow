@@ -17,7 +17,13 @@ function Card() {
       <section key={product.ean} className="cards">
         <h4>{product.fullname}</h4>
         <img src={product.picture} alt={ product.name }/>
-        <h4>{product.price}</h4>
+        <div >
+          <p>
+            <b>A partir de:</b>
+            <span class="value">R$ {product.price}</span>
+          </p>
+         <a class="purchase-btn" href="/">VER PRODUTO</a>
+        </div>
       </section>
      )}
     </section>

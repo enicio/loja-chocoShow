@@ -21,14 +21,81 @@
   border-radius: 15px;
 }
 
-.cards:hover {
-  background-color:rgb(250, 174, 86);
+.cards h4{
+  color: red;
+  font-weight: 400;
+  padding: 5px 0;
+  margin: 20px 0 0 0;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  color: #676767;
+  text-transform: capitalize;
+  max-height: 90px;
+  margin-bottom: auto;
+  overflow: visible;
 }
 
-h2, h4 {
-  color: rgb(68, 61, 75);
-  font-size: small;
+.cards:hover {
+  background-color:rgb(250, 174, 86);
+  transition: all .95s;
 }
+
+/* .details {
+  transition: all .35s;
+  display: flex;
+  margin-right: auto;
+  margin-bottom: 10px;
+  height: 50px;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 5px;
+  border-top: 1px solid #efefef;
+}
+
+.details:hover {
+  display: none;
+  transition: all .25s;
+  overflow:hidden;
+  height:0;
+}
+.details .value {
+      font-weight: 700;
+      padding-left: 10px;
+      color: #1a62d6;
+      font-size: 16px;
+      margin-top: 5px;
+      text-align: left;
+  } */
+
+  .value{
+    font-weight: 700;
+    padding-left: 10px;
+    color: #1a62d6;
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: left;
+  }
+
+  .purchase-btn {
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: auto;
+    border-radius: 6px;
+    height: 30px;
+    display: flex;
+    text-decoration:none;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a62d6;
+    padding: 0 10px;
+    width: max-content;
+    margin: auto auto 0;
+  }
+
+
 
 img {
   border-radius: 15px;
@@ -42,4 +109,12 @@ img {
   margin-top: 150px;
   margin-bottom: -150px;
   font-size: x-large;
+}
+
+@media (max-width: 700px) {
+.general {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
 }

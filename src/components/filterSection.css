@@ -41,3 +41,22 @@
 .sidenav ul li:hover {
   background-color: rgb(252, 119, 31);
 }
+
+@media (max-width: 700px) {
+  .sidenav{
+    height: 15vh;
+    width: 100vw;
+    position: relative;
+    margin-right: 50px;
+  }
+
+  .sidenav ul {
+    display: flex;
+    padding: 2px;
+  }
+
+  .sidenav ul li {
+    width: 35vw;
+  }
+
+}
