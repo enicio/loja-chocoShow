@@ -30,7 +30,7 @@ function ProductDetails(props) {
         <h4>Endereço: {address} , {address_number}</h4>
         <h4>Cidade: {city} - {state} </h4>
       </section>
-      <Link className='homeButton' to='/'>Retornar a página principla</Link>
+      <Link className='homeButton' to='/'>Retornar a página principal</Link>
     </section>
     </>
   )
