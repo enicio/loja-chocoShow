@@ -1,11 +1,10 @@
 import React , { useContext } from 'react';
+import { Link } from 'react-router-dom'
 import myContext from '../store/myContext';
-// import SeeDetails from '../components/seeProducts';
 import '../components/cards.css'
 
 function Card() {
   const { store, input } = useContext(myContext);
-  // const { products } = store;
 
   if( store === undefined) return <h1>Nenhum produto encontrado</h1>;
 
@@ -22,7 +21,7 @@ function Card() {
             <b>A partir de:</b>
             <span className="value">R$ {product.price}</span>
           </p>
-         <a className="purchase-btn" href="/">VER PRODUTO</a>
+         <Link className="purchase-btn" to={{pathname:'/details', state:{productId: product.ean} }}>VER PRODUTO</Link>
         </div>
       </section>
      )}

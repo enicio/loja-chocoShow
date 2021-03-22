@@ -1,0 +1,35 @@
+.product {
+  background-color: rgb(223, 223, 223);
+  display: flex;
+  flex-direction: column;
+  margin: 140px 10vw;
+  align-items: center;
+  text-align: center;
+  border-radius: 40px;
+  color: rgb(104, 103, 103);
+}
+
+.address {
+  background-color: rgb(192, 192, 192);
+  padding: 15px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+
+.homeButton {
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: auto;
+  border-radius: 6px;
+  height: 30px;
+  display: flex;
+  text-decoration:none;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a62d6;
+  padding: 0 10px;
+  width: max-content;
+  margin: auto auto 0;
+}

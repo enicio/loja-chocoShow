@@ -1,22 +1,15 @@
-import Input from './components/input'
+import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
-import Card from './components/cards';
-import Header from './components/header';
-import Footer from './components/footer'
 import './components/header.css'
-import FilterSection from './components/fillterSection'
+import MainPage from './pages';
+import ProductDetails from './components/productDetails'
 
 function App() {
   return (
-    <>
-    <header className='header'>
-      <Header/>
-      <Input />
-    </header>
-      <FilterSection />
-      <Card />
-    <Footer />
-    </>
+   <BrowserRouter>
+    <Route exact path='/'component={MainPage} />
+    <Route path='/details'component={ProductDetails} />
+   </BrowserRouter>
   );
 }
 
