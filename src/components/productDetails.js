@@ -9,9 +9,7 @@ function ProductDetails(props) {
   const { store: products } = useContext(myContext);
   const { location:{ state: {productId}}} = props;
   const DetailOfProduct = products.filter((product) => product.ean === productId  );
-  const { name,fullname, picture, price,
-          store: { name: nameStore, phone,
-            location: { address, city,address_number, state}}} = DetailOfProduct[0];
+  const { name,fullname, picture, price,location: { address, city,address_number, state}} = DetailOfProduct[0];
 
   return(
     <>
@@ -25,8 +23,8 @@ function ProductDetails(props) {
       <img src={picture} alt={name}/>
       <section className='address'>
         <h2>Disponivel em:</h2>
-        <h3>{nameStore}</h3>
-        <h4>Telefone: {phone}</h4>
+        {/* <h3>{nameStore}</h3>
+        <h4>Telefone: {phone}</h4> */}
         <h4>Endereço: {address} , {address_number}</h4>
         <h4>Cidade: {city} - {state} </h4>
       </section>

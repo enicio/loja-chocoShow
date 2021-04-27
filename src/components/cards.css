@@ -1,12 +1,13 @@
 .general {
   display: grid;
   margin-top: 180px;
-  margin-left: 175px;
-  margin-right: 5vw;
+  margin-left: 30vw;
+  margin-right: 30vw;
   justify-items: center;
   grid-gap: 50px;
   gap: 20px;
-  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  grid-template-columns: 1fr 1fr;
+  font-family: 'Poppins', sans-serif;
 }
 
 .cards {
@@ -14,15 +15,24 @@
   display: flex;
   flex-direction: column;
   align-content: center;
-  background-color: rgb(241, 241, 241);
-  width: 200px;
-  height: 230px;
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  height: 330px;
   padding: 5px;
   border-radius: 15px;
+  box-shadow: 0px 2px 20px 1px #e3e3e3;
+}
+
+.cards img {
+  /* margin-top: -70px; */
+  width: 100%;
+  height: 85%;
+
+  /* filter: drop-shadow(28px -22px 12px rgb(14, 14, 14)); */
 }
 
 .cards h4{
-  color: red;
+  position: absolute;
   font-weight: 400;
   padding: 5px 0;
   margin: 20px 0 0 0;
@@ -36,10 +46,39 @@
   overflow: visible;
 }
 
-.cards:hover {
-  background-color:rgb(250, 174, 86);
-  transition: all .95s;
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.cards .price p {
+ text-align: center;
+}
+
+.cards .price {
+  margin-top: -55px;
+  width: 100%;
+}
+
+.cards .price button {
+  width: 85%;
+  height: 50px;
+  background-color: rgba(75, 75, 255, 0.801);
+  border: none;
+  border-radius: 15px;
+  font-size: larger;
+  font-weight: 900;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  transition: 600ms;
+}
+
+.cards .price button:hover {
+  background-color: rgba(75, 75, 255, 0.514);
+}
+
 
 .value{
   font-weight: 700;

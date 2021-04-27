@@ -1,0 +1,27 @@
+.cart-image-container  {
+  width: 55px;
+  height: 55px;
+}
+
+.cart-image-container img {
+  width: 45px;
+  height: 46px;
+  margin: 0;
+}
+
+.cart-image-container a {
+  text-decoration: none;
+}
+
+.cart-image-container span {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 106, 80);
+  padding: 2px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 35px;
+  text-align: center;
+  margin-left: 30px;
+}

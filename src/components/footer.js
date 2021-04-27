@@ -5,7 +5,7 @@ function Footer() {
   return(
     <>
     <footer className="footer">
-      <span >Obrazul</span>
+      <span >ChocoShow</span>
       <span >Sobre</span>
       <span >Link</span>
       <span >Ajuda</span>
