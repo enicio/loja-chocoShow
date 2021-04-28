@@ -8,6 +8,7 @@
   gap: 20px;
   grid-template-columns: 1fr 1fr;
   font-family: 'Poppins', sans-serif;
+  min-height: 80vh;
 }
 
 .cards {
@@ -24,11 +25,8 @@
 }
 
 .cards img {
-  /* margin-top: -70px; */
   width: 100%;
   height: 85%;
-
-  /* filter: drop-shadow(28px -22px 12px rgb(14, 14, 14)); */
 }
 
 .cards h4{
@@ -124,9 +122,8 @@ img {
 }
 
 @media (max-width: 700px) {
-.general {
-  margin-top: 10px;
-  margin-left: 10vw;
-}
-
+  .general {
+    margin-top: 10px;
+    margin-left: 10vw;
+  }
 }

@@ -1,24 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import myContext from '../store/myContext';
-import fetchProduts from '../service/service';
-import product from '../service/products.json';
+import { fetchProduts } from '../service/service';
+// import product from '../service/products.json';
 
 function Provider({ children }) {
   const [ input, setInput ] = useState('');
   const [ store, setStore ] = useState([]);
   const [ cart, setCart ] = useState([]);
   const [ freeShipping, setFreeShipping ] = useState(false);
-  // const [ UF , setUF ] = useState([]);
-  // const [ filterByUF, setFilterByUF] = useState(store);
 
   useEffect( () => {
-    setStore(product.items);
-    // async function fetchData() {
-    //   const store = await fetchProduts(input);
-    //   const { products } = store;
-    //   setStore(products)
-    // }
-    // fetchData();
+    // setStore(product.items);
+    async function fetchData() {
+      const store = await fetchProduts(input);
+      const { items } = store;
+      setStore(items)
+    }
+    fetchData();
   },[input])
 
   // useEffect(() => {

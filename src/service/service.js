@@ -1,7 +1,7 @@
-const URL = 'https://www.obrazul.com.br/api/recruitment/products?search=';
+const URL = 'https://apideprodutos.vercel.app/api/products';
 
-export const fetchProduts = async (search) => {
-  const results = await fetch(URL + `${search}`);
+export const fetchProduts = async () => {
+  const results = await fetch(URL);
   const data = await results.json();
   return data;
 };
@@ -9,6 +9,3 @@ export const fetchProduts = async (search) => {
 export const convertCurrency = price => {
   return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(price/100)
 }
-
-
-// export default fetchProduts;

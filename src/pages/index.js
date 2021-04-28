@@ -4,7 +4,6 @@ import Footer from '../components/footer'
 import Cart from '../components/cart'
 import '../components/header.css'
 
-
 function MainPage() {
   return (
     <>
