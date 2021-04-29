@@ -1,11 +1,13 @@
 .footer {
-  justify-content: space-around;
-  color:whitesmoke;
-  background-color: #1a62d6;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color:whitesmoke;
+  font-weight: 600;
   height: 50px;
   margin-top: 15px;
   padding: 3px;
+  background-image: linear-gradient(to right, rgba(75, 75, 255, 0.801) , #1a62d6);
 }
 
 @media (max-width: 700px) {

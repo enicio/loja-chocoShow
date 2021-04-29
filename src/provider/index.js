@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import myContext from '../store/myContext';
 import { fetchProduts } from '../service/service';
-// import product from '../service/products.json';
+// import product from '../service/products.json';g
 
 function Provider({ children }) {
   const [ input, setInput ] = useState('');

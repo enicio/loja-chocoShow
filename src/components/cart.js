@@ -8,7 +8,7 @@ function Cart() {
   const { cart } = useContext(MyContext)
   return(
       <div className="cart-image-container">
-          { (cart.length > 0) &&  <span className="number-of-itens-on-cart" >{ cart.length}</span>}
+          { (cart.length > 0) &&  <span className="number-of-itens-on-cart" >{ cart.length }</span>}
         <Link to="/carrinho">
             <img className="cart-image" src={cartImage} alt="Carrinho de compras"/>
         </Link>
