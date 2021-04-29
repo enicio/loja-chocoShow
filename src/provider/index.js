@@ -19,30 +19,6 @@ function Provider({ children }) {
     fetchData();
   },[input])
 
-  // useEffect(() => {
-  //   console.log(cart)
-  // },[cart])
-
-  // useEffect( () => {
-  //   if (store){
-  //     const UF = store.map((product) => product.store.location.state  )
-  //     let UFUniqueState = new Set();
-  //     UF.forEach((uf) => UFUniqueState.add(uf))
-  //     let UFUniqueStateArray = []
-  //     for(let item of UFUniqueState) UFUniqueStateArray.push(item)
-  //     setUF(UFUniqueStateArray)
-  //   }
-  // },[store])
-
-  // useEffect( () => {
-  //   if (store){
-  //     const filtredByUF = store
-  //       .filter( (product) => product.store.location.state === filterByUF );
-  //     if( filtredByUF.length > 0 ) setStore(filtredByUF);
-  //   }
-  // // eslint-disable-next-line react-hooks/exhaustive-deps
-  // },[filterByUF]);
-
   const contextValue = {
     input,
     setInput,
