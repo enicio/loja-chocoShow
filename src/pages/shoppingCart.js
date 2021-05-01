@@ -13,13 +13,16 @@ function ShoppingCart() {
   useEffect(() => {
     let sum = 0;
     cart.forEach((item ) => {
-      setSumPrice(sum += item.product.price )
+      sum += item.product.price
     })
+    setSumPrice(sum);
+
        if (Number(sum) > 1000) {
       setFreeShipping(true)
     } else {
       setFreeShipping(false)
     };
+    console.log(cart)
    },[cart, setFreeShipping])
 
   return(

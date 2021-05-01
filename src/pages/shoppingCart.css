@@ -59,7 +59,7 @@
   margin: auto;
 }
 
-.itens {
+.products-on-cart .itens {
   display: flex;
   justify-content: stretch;
   width: 100%;
@@ -67,22 +67,36 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.itens .sellingPrice {
+.products-on-cart .itens .itens-information {
+  width: 100%;
+}
+
+.products-on-cart .itens .itens-information .sellingPrice {
   color: rgb(194, 194, 194);
   font-size: small;
   margin: 3px;
 }
 
-.itens h3 {
+.products-on-cart .itens .itens-information h3 {
   font-size: small;
   margin: 3px;
 }
 
-.itens img {
-  width: 90px;
-  height: 90px;
+.products-on-cart .itens img {
+  width: 120px;
+  height: 100px;
   margin: 5px;
   border: rgb(236, 236, 236) solid;
+}
+
+.products-on-cart .itens .delete-button {
+  border: none;
+  width: 30px;
+  height: 30px;
+  margin: auto 5px;
+  padding: 2px;
+  font-weight: 800;
+  border-radius: 3px;
 }
 
 .total-price-information {
@@ -134,4 +148,10 @@
   font-weight: 900;
   color: white;
   font-family: 'Poppins', sans-serif;
+  transition: 300ms;
+}
+
+
+.button-finish button:hover {
+  background-color: rgba(75, 75, 255, 1);
 }
